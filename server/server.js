@@ -11,7 +11,7 @@ const nodeMailer = require('nodemailer');
 const { google } = require('googleapis');
 console.log(`La clave secreta es: ${secretKey}`);
 
-const sequelize = new Sequelize('animales', 'ADMIN', 'kevinmarquez2007', {
+const sequelize = new Sequelize('animales', 'ADMIN', 'Kevinmarquez2007', {
     host: 'localhost',
     dialect: 'mysql'
 });
@@ -275,7 +275,6 @@ app.post('/login', async (req, res) => {
             where: {
                 email: email,
                 password: password,
-                isVerified: true 
             }
         });
 
